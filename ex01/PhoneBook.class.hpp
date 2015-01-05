@@ -6,7 +6,7 @@
 /*   By: wbeets <wbeets@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/05 17:08:43 by wbeets            #+#    #+#             */
-/*   Updated: 2015/01/05 17:59:12 by wbeets           ###   ########.fr       */
+/*   Updated: 2015/01/06 00:33:50 by wbeets           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,16 @@
 
 class PhoneBook {
 	public :
-		void Add(void);
-		void Search(void);
+		int	 	AddContact(void);
+		int		Search(void);
 		PhoneBook(void);
 		~PhoneBook(void);
 	private :
-		Contact[8] contacts;		
+		Contact contacts[8];
 		int contactCounter;
-}
+		std::string userInput(std::string msg);
+		void displaySearch(int i);
+		void dispContact(int i);
+};
 
 #endif
