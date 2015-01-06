@@ -6,7 +6,7 @@
 /*   By: wbeets <wbeets@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/05 16:25:02 by wbeets            #+#    #+#             */
-/*   Updated: 2015/01/06 00:44:29 by wbeets           ###   ########.fr       */
+/*   Updated: 2015/01/06 07:42:26 by wbeets           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ int		main(){
 	PhoneBook  		pB;
 	std::cout << "Welcome to your \\o/ AWESOME \\o/ PhoneBook " << std::endl;
 	while (!std::cin.eof()){
-	std::cout << "Please type ADD, SEARCH, or Exit " << std::endl;
-		std::cin >> buff;
+		std::cout << "Please type ADD, SEARCH, or EXIT " << std::endl;
+		std::getline(std::cin,buff);
 		if (buff.compare("EXIT") == 0){
 			return 0;
 		}
